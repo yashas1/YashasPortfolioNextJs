@@ -13,13 +13,12 @@ import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
 import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
 import TwitterIcon from '../components/Icon/TwitterIcon';
-import Header from '../components/Sections/Header';
+
 import heroImage from '../images/header-background.webp';
-import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
-import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
+import housemarket from '../images/portfolio/housemarket.png';
+import documentParser from '../images/portfolio/documentParser.jpg';
 import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
 import porfolioImage4 from '../images/portfolio/portfolio-4.jpg';
-import porfolioImage5 from '../images/portfolio/portfolio-5.jpg';
 
 import profilepic from '../images/profilepic.jpg';
 import testimonialImage from '../images/testimonial.webp';
@@ -51,7 +50,7 @@ export const SectionId = {
   Hero: 'hero',
   About: 'about',
   Contact: 'contact',
-  Portfolio: 'portfolio',
+  Projects: 'Projects',
   Resume: 'resume',
   Skills: 'skills',
   Stats: 'stats',
@@ -99,7 +98,10 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `For 5 years I have been interested in Web application Development and what excites me is "We don't just build websites, we build websites that SELLS”. The one thing that i never give up is the will to learn.......`,
+  description: `
+  I am an athlete at heart with an entrepreneurial spirit, a knack for software development, and a passion for coding. Born in a small town in Tumkur, Karnataka, India, I made my move to Ontario, Canada, Where i finished my post graduation studies as a full stack developer form conestoga college, alongside my many ongoing projects.
+  Outside of work I am an avid gymbrat, photographer and PC gamer. I love to travel and lead a fairly nomadic lifestyle. I built much of my early portfolio from beaches of south india and dream of taking my work with me while traveling the world.
+`,
   aboutItems: [
     {label: 'Location', text: 'Waterloo, ON', Icon: MapIcon},
     {label: 'Age', text: '27', Icon: CalendarIcon},
@@ -194,21 +196,23 @@ export const skills: SkillGroup[] = [
  */
 export const portfolioItems: PortfolioItem[] = [
   {
+    title: 'HouseMarket APP',
+    description:
+      'An HouseMarket app built using next js, firebase , Application allows the users to search for the near by houses and allows the user to sell the Houses.',
+    url: 'https://animated-piroshki-9d86f9.netlify.app/',
+    image: housemarket,
+  },
+  {
     title: 'Document Parser',
     description:
       'A web application in which AI model is trained to understand the unstructred Data, The model can read the Bank statments and generate the key values results ',
     url: 'https://github.com/yashas1/Final_capstone_project',
-    image: porfolioImage1,
+    image: documentParser,
   },
+
   {
-    title: 'House Search APP',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
-    image: porfolioImage2,
-  },
-  {
-    title: 'Project title 3',
-    description: 'Give a short description of your project here.',
+    title: 'Pro Shop',
+    description: 'An Ecommerce application ',
     url: 'https://timbaker.me',
     image: porfolioImage3,
   },
@@ -217,12 +221,6 @@ export const portfolioItems: PortfolioItem[] = [
     description: 'Give a short description of your project here.',
     url: 'https://timbaker.me',
     image: porfolioImage4,
-  },
-  {
-    title: 'Project title 5',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
-    image: porfolioImage5,
   },
 ];
 
@@ -373,5 +371,5 @@ export const socialLinks: Social[] = [
   {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/11817070/yashas-b'},
   {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/yashas-bhadregowda-67b5a9122/'},
   {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/yashas____gowda/'},
-  {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx'},
+  {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/yashas164'},
 ];
