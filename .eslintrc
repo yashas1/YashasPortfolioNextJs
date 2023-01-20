@@ -19,6 +19,8 @@
   "ignorePatterns": ["*/public", "*/node_modules/*", "*/.next/*", "*/dist/*"],
   "rules": {
     "react/display-name": "off",
+    "react/no-unescaped-entities": "off",
+    "@next/next/no-page-custom-font": "off",
     // The next two rules should be errors. But for now we"ll leave them as warnings since this will take a while
     "react-memo/require-usememo": "error",
     "react-memo/require-memo": "error",
@@ -39,13 +41,13 @@
     "no-irregular-whitespace": "off",
     "@typescript-eslint/no-unused-vars": ["warn", {"argsIgnorePattern": "^_"}],
     "object-curly-spacing": ["error", "never"],
-    "react/jsx-curly-brace-presence": [2, "never"],
+    "react/jsx-curly-brace-presence": ["off", "never"],
     "react/jsx-no-duplicate-props": "error",
-    "react/jsx-sort-props": "error",
+    "react/jsx-sort-props": "off",
     "react/react-in-jsx-scope": "off",
-    "react/no-unescaped-entities": "off",
+   
     "simple-import-sort/exports": "error",
-    "simple-import-sort/imports": "error",
+    "simple-import-sort/imports": "off",
     "sort-imports": "off",
     "jsx-a11y/no-onchange": "off",
     "jsx-a11y/no-autofocus": "off",
