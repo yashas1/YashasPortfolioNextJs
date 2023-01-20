@@ -1,6 +1,6 @@
 import {ExternalLinkIcon} from '@heroicons/react/outline';
 import classNames from 'classnames';
-// import Image from 'next/image';
+import Image from 'next/image';
 import {FC, memo, MouseEvent, useCallback, useEffect, useRef, useState} from 'react';
 
 import {isMobile} from '../../config';
@@ -17,20 +17,14 @@ const Portfolio: FC = memo(() => {
         <div className=" w-full columns-2 md:columns-3 lg:columns-4">
           {portfolioItems.map((item, index) => {
             const {title, image} = item;
-            console.log(image);
-            console.log(image?.src);
+
             return (
               <div className="pb-6" key={`${title}-${index}`}>
                 <div
                   className={classNames(
                     'shadow-black/03 relative h-max w-full overflow-hidden rounded-lg shadow-lg lg:shadow-xl',
                   )}>
-                  <img
-                    alt={title}
-                    placeholder="blur"
-                    style={{height: '220px', width: '450px', objectFit: 'cover'}}
-                    src={image.src}></img>
-
+                  <Image src={image} alt="Picture of the author" objectFit={'cover'} width={456} height={400} />
                   <ItemOverlay item={item} />
                 </div>
               </div>
@@ -46,6 +40,7 @@ Portfolio.displayName = 'Portfolio';
 export default Portfolio;
 
 const ItemOverlay: FC<{item: PortfolioItem}> = memo(({item: {url, title, description}}) => {
+  console.log(url);
   const [mobile, setMobile] = useState(false);
   const [showOverlay, setShowOverlay] = useState(false);
   const linkRef = useRef<HTMLAnchorElement>(null);

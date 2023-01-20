@@ -17,8 +17,8 @@ import TwitterIcon from '../components/Icon/TwitterIcon';
 import heroImage from '../images/header-background.webp';
 import housemarket from '../images/portfolio/housemarket.png';
 import documentParser from '../images/portfolio/documentParser.jpg';
-import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
-import porfolioImage4 from '../images/portfolio/portfolio-4.jpg';
+import eCommerceApp from '../images/portfolio/eCommerceApp.jpg';
+import PortfolioApp from '../images/portfolio/PortfolioApp.jpg';
 
 import profilepic from '../images/profilepic.jpg';
 import testimonialImage from '../images/testimonial.webp';
@@ -212,15 +212,17 @@ export const portfolioItems: PortfolioItem[] = [
 
   {
     title: 'Pro Shop',
-    description: 'An Ecommerce application ',
-    url: 'https://timbaker.me',
-    image: porfolioImage3,
+    description:
+      'An Ecommerce application, built using React, Nodejs, Express, Mongodb, The application allows the user to shop electronic products , The application also handles the payment through PayPal gateway. The admin panel have access to create and delete the products and manage the product delivery. The user authentication is handled using JWT web Token. ',
+    url: 'https://github.com/yashas1/Mern_Ecommerce-',
+    image: eCommerceApp,
   },
   {
-    title: 'Project title 4',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
-    image: porfolioImage4,
+    title: 'Portfolio APP',
+    description:
+      'This is a React based personal resume website template. Built with typescript on the Next.js framework, styled with Tailwind css, and populated with data from a single file, you can easily create, customize and host your own personal website in minutes. Even better, the site is fully mobile-optimized and server-side rendered to ensure fast loading and a clean UI on any device. Read on to learn how to make it your own.',
+    url: 'https://github.com/yashas1/YashasPortfolioNextJs',
+    image: PortfolioApp,
   },
 ];
 
