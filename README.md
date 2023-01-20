@@ -1,10 +1,8 @@
 # Next JS Resume Website Template
 
-![NextJS Resume Website Template](resume-screenshot.jpg?raw=true 'NextJs Resume Website Template')
+![NextJS Resume Website Template](PortfolioApp.jpg?raw=true 'NextJs Resume Website Template')
 
-### View a [live demo here.](https://reactresume.com)
-
-#### If this template has helped you and you'd like to support my work, feel free to [♥️ Sponsor](https://github.com/sponsors/tbakerx) the project
+### View a [live demo here.]
 
 ### 🎉 Version 2 is here! New features:
 
@@ -13,8 +11,6 @@
 3. Styled entirely with [TailwindCss](https://tailwindcss.com/)
 4. Re-organized data population file for customizing site.
 5. Significant improvement/modernization of all site sections
-
-**Looking for the old version? You can find it [here.](https://github.com/tbakerx/react-resume-template/releases/tag/v1.0.0)**
 
 ## Description
 
@@ -41,11 +37,3 @@ All of the data for the site is driven via a file at `/src/data/data.tsx`. This 
 ### 5. Hook up contact form
 
 Due to the variety of options available for contact form providers, I've hooked up the contact form only so far as handling inputs and state. Form submission and the actual sending of the email is open to your own implementation. My personal recommendation for email provider is [Sendgrid.](https://sendgrid.com/)
-
-### 6. Make any other changes you like
-
-Of course, all of the code is there and nothing is hidden from you so if you would like to make any other styling/data changes, feel free!
-
-### 7. Deploy to Vercel and enjoy your new Resume Website
-
-Deploying your new site to Vercel is simple, and can be done by following their guide [here.](https://vercel.com/guides/deploying-nextjs-with-vercel) When you're all done and the build succeeds, you should be given a url for your live site, go there and you'll see your new personal resume website! Congratulations!
