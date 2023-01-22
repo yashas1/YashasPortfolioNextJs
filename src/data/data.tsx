@@ -68,7 +68,7 @@ export const heroData: Hero = {
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a Canada based <strong className="text-stone-100">Full Stack Software Engineer</strong>, currently looking
+        I'm a Canada based <strong className="text-stone-100">Full Stack Software Developer</strong>, currently looking
         for Full time job in <strong className="text-stone-100">Software development role </strong>.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
@@ -348,6 +348,11 @@ export const contact: ContactSection = {
       href: 'mailto:yashas.bhadregowda@gmail.com',
     },
     {
+      type: ContactType.Phone,
+      text: '+1-5483331273',
+      href: 'tel:+1-5483331273',
+    },
+    {
       type: ContactType.Location,
       text: 'Waterloo On, Canada',
       href: 'https://goo.gl/maps/CBmZQ3ics3Nap2Dj6',
@@ -356,11 +361,6 @@ export const contact: ContactSection = {
       type: ContactType.Instagram,
       text: '@yashas____gowda',
       href: 'https://www.instagram.com/yashas____gowda/',
-    },
-    {
-      type: ContactType.Github,
-      text: 'yashas1',
-      href: 'https://github.com/yashas1',
     },
   ],
 };
